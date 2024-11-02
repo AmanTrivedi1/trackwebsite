@@ -25,9 +25,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${poppins.className} bg-brand-50 text-brand-950 antialiased`}
+          className={`${poppins.className} bg-brand-50 min-h-[calc(100vh-1px)] flex flex-col text-brand-950 antialiased`}
         >
-          <Providers>{children}</Providers>
+          <main className="relative flex flex-1 flex-col">
+            <Providers>{children}</Providers>
+          </main>
         </body>
       </html>
     </ClerkProvider>
