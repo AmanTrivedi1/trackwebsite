@@ -7,7 +7,6 @@ import { currentUser } from "@clerk/nextjs/server"
 
 export const Navbar = async () => {
   const user = await currentUser()
-
   return (
     <nav className="sticky z-[100] h-16 inset-x-0 top-0 w-full   backdrop-blur-lg transition-all">
       <MaxWidthWrapper>

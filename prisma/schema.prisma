@@ -88,5 +88,5 @@ model Quota {
   month Int
   count Int @default(0)
 
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt 
 }
